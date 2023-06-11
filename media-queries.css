@@ -1,0 +1,135 @@
+@media screen and (max-width:768px) {
+    .nav-bar {
+        overflow: initial;
+    }
+
+    header {
+        overflow: initial;
+    }
+
+    .nav-links {
+        position: absolute;
+        top: 0;
+        right: -100%;
+        width: 80%;
+        flex-direction: column;
+        background-color: var(--neutral-color-1);
+        padding-block: 10%;
+        height: 100vh;
+        justify-content: center;
+        transition: right 0.25s ease-in-out;
+
+    }
+
+    #close-menu-btn {
+        display: block;
+        align-self: flex-start !important;
+        justify-self: flex-start !important;
+        color: red;
+        font-size: xx-large;
+    }
+
+    #hamburger {
+        display: block;
+        background-color: var(--primary-color);
+        padding-inline: 20px;
+        color: white;
+        padding-block: 5px;
+        border-radius: 4px;
+    }
+
+    .hover-links a {
+        color: white;
+    }
+
+    .nav-links.active {
+        right: 0;
+    }
+
+    #h2-banner {
+
+        font-size: 1.3rem;
+    }
+
+    .h1-banner {
+        font-size: 2rem;
+    }
+
+    .p-banner {
+        width: 100%;
+        font-size: 1rem;
+    }
+
+    .cat-container {
+        flex-direction: column;
+    }
+
+    .man-cat,
+    .woman-cat {
+        width: 100%;
+        height: 50vh;
+
+
+    }
+
+    .man-cat {
+        background-image: url(https://media.istockphoto.com/id/611630764/photo/handsome-guy-is-evincing-his-confidence.jpg?s=612x612&w=0&k=20&c=8ABQ7aPWnqye-3C_XvLSUy2kn7b6nmAE2ftKn7-2Z6E=);
+    }
+
+    .woman-cat a,
+    .man-cat a {
+        padding-right: 15%;
+        padding-top: 20%;
+        font-size: larger;
+    }
+
+    .call-to-action {
+        flex-direction: column;
+    }
+
+    .l-call,
+    .r-call {
+        width: 100%;
+        padding-block: 40px;
+    }
+
+    .r-call {
+        align-items: flex-end;
+        text-align: right;
+        padding-inline-end: 30px;
+    }
+
+    .call-parah {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width:490px) {
+    .quote-banner h2 {
+        font-size: 1.6rem;
+    }
+    .quote-banner p {
+        font-weight: 300;
+        width: 100%;
+    }
+    .call-to-action {
+        padding-inline: 10px;
+    }
+
+    .l-call {
+        padding-inline-end: 10px;
+    }
+
+    .call-parah {
+        width: 100%;
+    }
+    .feature-card-container {
+gap: 20px;
+    }.footer-flex {
+        gap: 80px;
+    }.pro-card {
+        
+        width: 300px;
+        
+    }
+}
