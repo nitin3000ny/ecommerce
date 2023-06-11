@@ -10,12 +10,13 @@
 :root {
     --primary-color: #005AFF;
     --accent-color-1: #FF584D;
-    --accent-color-2: #FFD700;
+    --accent-color-2: #e4c40a;
     --neutral-color-1: #333333;
     --neutral-color-2: #f1f1f1;
+    --neutral-color-3: #b5acac;
     --secondary-color: #088bf0;
     --inline-padding: 30px;
-
+--cart-color:#03cd82;
 }
 
 /* Example background with neutral color */
@@ -215,7 +216,7 @@ a {
     background-size: cover;
 }
 
-.down-arr-cat{
+.down-arr-cat {
     position: absolute;
     bottom: 40px;
     right: 40px;
@@ -227,6 +228,7 @@ a {
     text-align: center;
     font-size: 30px;
 }
+
 /* category */
 .man-cat,
 .woman-cat {
@@ -240,7 +242,9 @@ a {
 .man-cat {
     background-image: url(https://images.unsplash.com/photo-1594760047459-09ef16805a7a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzZ8fG1hbiUyMGluJTIwc3VpdHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60);
 }
-.woman-cat a,.man-cat a{
+
+.woman-cat a,
+.man-cat a {
     color: #f1f1f1;
     text-align: right;
     width: 100%;
@@ -248,6 +252,79 @@ a {
     padding-top: 10%;
     transition: text-decoration 0.3s ease-in-out;
 }
-.woman-cat a:hover,.man-cat a:hover{
+
+.woman-cat a:hover,
+.man-cat a:hover {
     text-decoration: underline;
+}
+
+.pro-card {
+position: relative;
+    flex-direction: column;
+    gap: 6px;
+    width: 260px;
+    height: 430px;
+    align-items: flex-start;
+    text-align: left;
+    padding: 10px;
+    border: 1px solid var(--neutral-color-3);
+    border-radius: 6px;
+    box-shadow: 2px 2px 13px rgba(0, 0, 0, 0.274);
+
+}
+.products-card-container{
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+}
+.pro-card:hover{
+    cursor: pointer;
+    box-shadow: 1px 1px 23px rgba(0, 0, 0, 0.274);
+}
+.pro-card img {
+    width: 100%;
+}
+
+.products-section,.featured-products-section {
+    margin-block: 40px;
+    text-align: center;
+}
+.add-to-cart{
+    width: 40px;
+    height: 40px;
+    padding-top: 10px;
+    text-align: center;
+    border-radius: 50%;
+    background-color: var(--neutral-color-1);
+    border: 1px solid rgb(46, 44, 44);
+    color: var(--cart-color);
+    align-self: flex-end;
+}
+.add-to-cart:hover{
+    box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.338);
+    transform: translateY(-3px);
+}
+#pr-heading{
+    padding-bottom: 30px;
+    font-size: 2rem;
+
+}
+.pro-card .rating{
+    color: var(--accent-color-2);
+}
+.quote-banner-section{
+    background-color: #0000009c;
+    margin-block: 80px;
+    text-align: center;
+    padding-block: 100px;
+    background-image: url(https://images.unsplash.com/photo-1558769132-cb1aea458c5e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80);
+    background-blend-mode: color-dodge;
+    background-size: cover;
+
+}
+.quote-banner h2{
+font-size: 2.3rem;
+text-decoration: 1px 1px 2px rgb(192, 189, 189);
+}.quote-banner p{
+    color: #dad8d8;
 }
