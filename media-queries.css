@@ -108,10 +108,12 @@
     .quote-banner h2 {
         font-size: 1.6rem;
     }
+
     .quote-banner p {
         font-weight: 300;
         width: 100%;
     }
+
     .call-to-action {
         padding-inline: 10px;
     }
@@ -123,16 +125,22 @@
     .call-parah {
         width: 100%;
     }
+
     .feature-card-container {
-gap: 20px;
-    }.footer-flex {
-        gap: 80px;
-    }.pro-card {
-        
-        width: 300px;
-        
+        gap: 20px;
     }
-    .nav-bar{
+
+    .footer-flex {
+        gap: 80px;
+    }
+
+    .pro-card {
+
+        width: 100%;
+
+    }
+
+    .nav-bar {
         padding-inline: 20px;
     }
 }
