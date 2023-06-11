@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700;800&family=Poppins:wght@400;700&family=Roboto:wght@300;500;700;900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+:root {
+    --primary-color: #005AFF;
+    --accent-color-1: #FF584D;
+    --accent-color-2: #FFD700;
+    --neutral-color-1: #333333;
+    --neutral-color-2: #f1f1f1;
+    --inline-padding: 30px;
+
+}
+
+/* Example background with neutral color */
+.info-box {
+    background-color: var(--neutral-color-2);
+    color: var(--neutral-color-1);
+}
+
+
+
+/* Body background */
+body {
+    background-color: var(--neutral-color-2);
+}
+
+/* Primary color for headings or links */
+h1,
+h2,
+h3,
+a {
+    color: var(--primary-color);
+}
+
+/* Accent color for buttons */
+.button {
+    background-color: var(--accent-color-1);
+    color: #fff;
+}
+
+/* Accent color hover effect */
+.button:hover {
+    background-color: var(--accent-color-2);
+}
+
+/* Text color with neutral color */
+p,
+span {
+    color: var(--neutral-color-1);
+}
+
+/* Example background gradient with primary and accent colors */
+.gradient-background {
+    background: linear-gradient(to bottom right, var(--primary-color), var(--accent-color-2));
+}
+
+/* Example border color with primary color */
+.product-card {
+    border: 1px solid var(--primary-color);
+}
+
+/* Example background with accent color */
+.feature-box {
+    background-color: var(--accent-color-1);
+    color: #fff;
+}
+
+
+
+.container {
+    padding-inline: 80px;
+
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+
+
+/* header */
+
+.nav-bar {
+    padding-block: 30px;
+    justify-content: space-between;
+    box-shadow: 0px 3px 14px rgba(0, 0, 0, 0.541);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    width: 100%;
+}
+.img-logo{
+    width: 100px;
+}
+
+   
+
+
+.nav-links {
+    gap: 30px;
+}
