@@ -92,3 +92,9 @@ select option {
 #buy-now{
     background-color: green;
 }
+@media screen and (max-width:768px) {
+    .pr-left, .pr-right-flex {
+        width: 100%;
+        padding-inline: 0;
+    }
+}    
