@@ -32,10 +32,17 @@ for (let i = 0; i < proCard.length; i++) {
     proCard[i].addEventListener('click', () => {
         window.open("sproduct.html");
     }
-    )
+    );
 }
 
+let main = document.getElementById('main-pic');
+const small = document.querySelectorAll(".small-imgs2");
 
+small.forEach((small) => {
+    small.addEventListener('click', () => {
+        main.src = small.src;
+    });
+});
 
 //  main.src = `${proCardimg[1].src}`;
 // console.log(proCardimg[0].src);
