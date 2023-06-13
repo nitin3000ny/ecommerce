@@ -120,6 +120,14 @@
 }
 
 @media screen and (max-width:490px) {
+    .products-container{
+        padding-inline: 30px;
+    }.products-card-container{
+        padding-inline: 30px;
+    }
+    .pro-card{
+        height: 460px;
+    }
     .l-call:hover {
         transform: none;
         scale: 1.2;
