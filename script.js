@@ -46,3 +46,4 @@ small.forEach((small) => {
 
 //  main.src = `${proCardimg[1].src}`;
 // console.log(proCardimg[0].src);
+

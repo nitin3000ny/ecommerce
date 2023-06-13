@@ -557,3 +557,25 @@ footer a {
 .popup-content a:hover {
     text-decoration: underline;
 }
+/* shop */
+.shop-pr{
+    padding-block:80px;
+}
+.shop-banner
+{
+    padding-block:90px;
+    margin-top: 55px;
+    background-image: url(https://img.freepik.com/free-photo/cool-woman-with-longboard_53876-64866.jpg?size=626&ext=jpg&ga=GA1.2.1999495773.1680884673&semt=ais);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.buttons-next{
+    text-align: center;
+    gap: 10px;
+    justify-content: center;
+    padding-block: 30px;
+}
+.buttons-next .primary-btn{
+    background-color: #03cd82;
+    padding-inline: 16px;
+}
