@@ -120,6 +120,18 @@
 }
 
 @media screen and (max-width:490px) {
+    .l-call:hover {
+        transform: none;
+        scale: 1.2;
+        cursor: pointer;
+    }
+
+    .r-call:hover {
+        cursor: pointer;
+        transform:none;
+        scale: 1.2;
+    }
+
     .quote-banner h2 {
         font-size: 1.6rem;
     }

@@ -364,7 +364,8 @@ a {
 
 /* call to action */
 .call-to-action {
-    margin-block: 80px;
+    padding-block: 20px;
+    margin-block: 60px;
 }
 
 .l-call,
@@ -383,7 +384,16 @@ a {
 
 
 }
-
+.l-call:hover{
+    transform: translateX(30px) translateY(-20px);
+    scale: 1.2;
+    cursor: pointer;
+}
+.r-call:hover{
+    cursor: pointer;
+    transform: translateX(-30px) translateY(20px);
+    scale: 1.2;
+}
 .l-call h2,
 .r-call h2 {
     color: #fffffffd;
