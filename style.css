@@ -583,7 +583,7 @@ footer a {
     text-align: center;
     gap: 10px;
     justify-content: center;
-    padding-block: 30px;
+    padding-top: 80px;
 }
 .buttons-next .primary-btn{
     background-color: #03cd82;
