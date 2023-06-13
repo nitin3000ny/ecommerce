@@ -97,4 +97,16 @@ select option {
         width: 100%;
         padding-inline: 0;
     }
+    .pr-left{
+        border-radius: 4px;
+        padding: 8px;
+        background-color:#d2d1d1;
+    }
+    .pr-left img{
+        border-radius: 4px;
+        border: 1px solid #fff;
+    }
+    .pr-left img:hover{
+        scale:1.2
+    }
 }    

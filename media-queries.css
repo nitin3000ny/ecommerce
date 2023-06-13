@@ -1,9 +1,5 @@
 @media screen and (max-width:768px) {
 
-    .pr-details-container {
-        flex-direction: column;
-        width: 100%;
-    }
 
     .nav-bar {
         overflow: initial;
@@ -108,6 +104,19 @@
     .call-parah {
         width: 90%;
     }
+
+    .pr-details-container {
+        padding-block: 20px;
+        /* background-color: #d2d1d1; */
+        flex-direction: column;
+        width: 100%;
+
+    }
+
+    footer {
+        border-top: 1px solid rgb(82, 80, 80);
+    }
+
 }
 
 @media screen and (max-width:490px) {

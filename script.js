@@ -5,10 +5,11 @@ currentYearElement.textContent = currentYear;
 document.addEventListener("DOMContentLoaded", function () {
     const popupOverlay = document.querySelector(".popup-overlay");
     const closeButton = document.querySelector(".close-btn");
-
-    closeButton.addEventListener("click", function () {
-        popupOverlay.style.display = "none";
-    });
+    if (closeButton) {
+        closeButton.addEventListener("click", function () {
+            popupOverlay.style.display = "none";
+        });
+    }
 });
 const hambutton = document.querySelector('#hamburger');
 hambutton.addEventListener('click', () => {
@@ -23,9 +24,18 @@ closebutton.addEventListener('click', (e) => {
     menu.classList.remove('active');
 
 })
-const proCard=document.querySelectorAll('.pro-card');
-for(let i=0;i<proCard.length;i++){
-    
-proCard[i].addEventListener('click',()=>{
-    window.open("sproduct.html")});
+
+const proCard = document.querySelectorAll('.pro-card');
+
+
+for (let i = 0; i < proCard.length; i++) {
+    proCard[i].addEventListener('click', () => {
+        window.open("sproduct.html");
+    }
+    )
 }
+
+
+
+//  main.src = `${proCardimg[1].src}`;
+// console.log(proCardimg[0].src);
