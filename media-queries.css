@@ -157,7 +157,9 @@
     }
 }
 
-@media screen and (max-width:490px) {
+@media screen and (max-width:490px) { .blog-left img {
+        height: 300px;
+    }
     .products-container {
         padding-inline: 30px;
     }
