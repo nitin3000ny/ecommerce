@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* blog */
 
 
@@ -43,4 +44,51 @@
     color: white;
     font-weight: 300;
     margin-block: 30px;
+=======
+/* blog */
+
+
+
+/* Style the video: 100% width and height to cover the entire window */
+.blog-video {
+    position: relative;
+}
+
+#myVideo {
+   min-width: 100%;
+    min-height: 100vh;
+}
+
+/* Add some content at the bottom of the video/page */
+.video-content {
+    position: absolute;
+    top:20%;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    /* width: 100%; */
+    padding: 20px;
+}
+
+/* Style the button used to pause/play the video */
+#myBtn {
+    width: 200px;
+    font-size: 18px;
+    padding: 10px;
+    border: none;
+    background: #000;
+    color: #fff;
+    cursor: pointer;
+}
+
+#myBtn:hover {
+    background: #ddd;
+    color: black;
+}
+#blog-detail{
+    color: white;
+    font-weight: 300;
+    margin-block: 30px;
+>>>>>>> d45885079c8520bbdfe8ee5ce8a89a51e5950009
 }
