@@ -157,7 +157,8 @@
     }
 }
 
-@media screen and (max-width:490px) { .blog-left img {
+@media screen and (max-width:490px) {
+    .blog-left img {
         height: 300px;
     }
     .products-container {

@@ -161,6 +161,37 @@ a {
     background-color: #f3f4f8;
 }
 
+.hover-links a.active2 {
+    color: var(--accent-color-1);
+}
+
+.hover-links a {
+    position: relative;
+    transition: all 0.4s ease-out;
+}
+
+.hover-links a:hover::after {
+
+    content: "";
+    animation: width 0.5s ease-in-out;
+    height: 2px;
+    background-color: var(--accent-color-1);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 80%;
+}
+
+@keyframes width {
+    0%{
+        width: 0%;
+    }
+
+    100% {
+        width: 80%;
+    }
+}
+
 #hamburger {
     overflow: initial;
     display: none;
@@ -670,9 +701,10 @@ footer a {
 .blog-left {
     width: 50%;
 }
-.blog-left :hover{
-  cursor: pointer;
-  box-shadow: 2px 2px 13px;
+
+.blog-left :hover {
+    cursor: pointer;
+    box-shadow: 2px 2px 13px;
 }
 
 .blog-article {
