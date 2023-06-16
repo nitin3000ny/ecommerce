@@ -7,9 +7,11 @@
     font-family: 'Nunito Sans', sans-serif;
 
 }
-.container{
+
+.container {
     overflow: hidden;
 }
+
 html {
     scroll-behavior: smooth;
 }
@@ -174,7 +176,8 @@ a {
 .nav-links {
     gap: 50px;
 }
-#close-menu-btn{
+
+#close-menu-btn {
     display: none;
 }
 
@@ -384,16 +387,19 @@ a {
 
 
 }
-.l-call:hover{
+
+.l-call:hover {
     transform: translateX(30px) translateY(-20px);
     scale: 1.2;
     cursor: pointer;
 }
-.r-call:hover{
+
+.r-call:hover {
     cursor: pointer;
     transform: translateX(-30px) translateY(20px);
     scale: 1.2;
 }
+
 .l-call h2,
 .r-call h2 {
     color: #fffffffd;
@@ -567,25 +573,76 @@ footer a {
 .popup-content a:hover {
     text-decoration: underline;
 }
+
 /* shop */
-.shop-pr{
-    padding-block:80px;
+.shop-pr {
+    padding-block: 80px;
 }
-.shop-banner
-{
-    padding-block:90px;
+
+.shop-banner {
+    padding-block: 90px;
     margin-top: 55px;
     background-image: url(https://img.freepik.com/free-photo/cool-woman-with-longboard_53876-64866.jpg?size=626&ext=jpg&ga=GA1.2.1999495773.1680884673&semt=ais);
     background-repeat: no-repeat;
     background-position: center;
 }
-.buttons-next{
+
+.buttons-next {
     text-align: center;
     gap: 10px;
     justify-content: center;
     padding-top: 80px;
 }
-.buttons-next .primary-btn{
+
+.buttons-next .primary-btn {
     background-color: #03cd82;
     padding-inline: 16px;
+}
+
+/* blog */
+
+
+
+/* Style the video: 100% width and height to cover the entire window */
+.blog-video {
+    position: relative;
+    top: 0;
+}
+
+#myVideo {
+   min-width: 100%;
+    min-height: 100vh;
+}
+
+/* Add some content at the bottom of the video/page */
+.video-content {
+    position: absolute;
+    top:20%;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    /* width: 100%; */
+    padding: 20px;
+}
+
+/* Style the button used to pause/play the video */
+#myBtn {
+    width: 200px;
+    font-size: 18px;
+    padding: 10px;
+    border: none;
+    background: #000;
+    color: #fff;
+    cursor: pointer;
+}
+
+#myBtn:hover {
+    background: #ddd;
+    color: black;
+}
+#blog-detail{
+    color: white;
+    font-weight: 300;
+    margin-block: 30px;
 }
