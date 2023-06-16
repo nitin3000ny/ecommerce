@@ -183,7 +183,7 @@ a {
 }
 
 @keyframes width {
-    0%{
+    0% {
         width: 0%;
     }
 
@@ -638,6 +638,10 @@ footer a {
     padding-inline: 16px;
 }
 
+.buttons-next .primary-btn:hover {
+    background-color: #158a5b;
+}
+
 /* blog */
 
 
@@ -767,4 +771,85 @@ footer a {
     top: -9px;
     z-index: -9;
     color: var(--neutral-color-3);
+}
+
+/* contact */
+
+
+.contact-list {
+    align-items: flex-start;
+    width: 100%;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.contact-list>li>a>i {
+
+    background-color: #005AFF;
+    padding: 6px;
+    color: white;
+    width: 30px;
+    border-radius: 6px;
+
+}
+
+
+.contact-list>li>a {
+    position: relative;
+}
+
+.contact-list>li>a:hover::after {
+
+    content: "";
+    animation: width 0.5s ease-in-out;
+    height: 2px;
+    background-color: var(--secondary-color);
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 100%;
+}
+
+.l-contact {
+    width: 30%;
+}
+
+.r-contact {
+    width: 70%;
+}
+
+.r-contact iframe {
+    width: 100%;
+}
+
+.contact-banner {
+    margin-top: 56px;
+    background-image: url(https://img.freepik.com/free-photo/3d-rendering-luxury-scandinavian-wood-walk-closet-with-wardrobe-make-up-table_105762-2147.jpg?size=626&ext=jpg);
+    background-position: center;
+
+}
+.contact-form{
+    margin-block: 20px;
+    flex-direction: column;
+    width: 100%;
+    gap: 20px;
+}
+.contact-form-section{
+    padding-top: 30px;
+    text-align: center;
+}
+.contact-form input, .contact-form textarea{
+    width: 80%;
+    height: 2rem;
+    padding-inline: 10px;
+    border-radius: 6px;
+    border: none;
+    resize: none;
+}
+.contact-form textarea{
+    height: 4rem;
+    padding-top: 1rem;
+}
+.send-btn:hover{
+background-color: #b03131;
 }
