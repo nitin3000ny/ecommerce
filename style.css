@@ -607,23 +607,23 @@ footer a {
 .blog-video {
     position: relative;
     top: 50px;
-    overflow:hidden;
+    overflow: hidden;
 }
 
 
+#myVideo{
 
+    width: 100%;
+}
 /* Add some content at the bottom of the video/page */
 .video-content {
     overflow: hidden;
     position: absolute;
-    top: 0%;
-    bottom: 0;
-    left: 0;
-    right: 0;
+    top: 0;
+    bottom: 5px;
+    padding-top: 5%;
     background: rgba(0, 0, 0, 0.5);
     color: #f1f1f1;
-    /* width: 100%; */
-    padding: 20px;
 }
 
 /* Style the button used to pause/play the video */

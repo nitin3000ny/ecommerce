@@ -119,15 +119,40 @@
 
 }
 
+@media screen and (max-width:647px) {
+    #blog-detail {
+        width: 0;
+        height: 0;
+        overflow: hidden;
+    }
+}
+
+@media screen and (max-width:532px) {
+    #myBtn {
+        display: none;
+    }
+
+    #blog-heading {
+        padding-top: 70px;
+        width: 100%;
+        color: #fff;
+        font-size: 2rem;
+    }
+}
+
 @media screen and (max-width:490px) {
-    .products-container{
-        padding-inline: 30px;
-    }.products-card-container{
+    .products-container {
         padding-inline: 30px;
     }
-    .pro-card{
+
+    .products-card-container {
+        padding-inline: 30px;
+    }
+
+    .pro-card {
         height: 460px;
     }
+
     .l-call:hover {
         transform: none;
         scale: 1.2;
@@ -136,7 +161,7 @@
 
     .r-call:hover {
         cursor: pointer;
-        transform:none;
+        transform: none;
         scale: 1.2;
     }
 
