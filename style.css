@@ -613,6 +613,7 @@ footer a {
 
 /* Add some content at the bottom of the video/page */
 .video-content {
+    overflow: hidden;
     position: absolute;
     top: 0%;
     bottom: 0;
