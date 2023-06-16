@@ -1,6 +1,15 @@
 @media screen and (max-width:768px) {
-
-
+.blog-article{
+    flex-direction: column;
+}
+.blog-left,.blog-right{
+    padding-inline: 30px;
+    width: 100%;
+}
+.blog-article h1 {
+    top: -9px;
+    right: 2px;
+}
     .nav-bar {
         overflow: initial;
     }
@@ -120,6 +129,11 @@
 }
 
 @media screen and (max-width:647px) {
+    .video-content {
+
+        padding-top: 5%;
+    }
+
     #blog-detail {
         width: 0;
         height: 0;
@@ -128,6 +142,9 @@
 }
 
 @media screen and (max-width:532px) {
+    .blog-left {
+        padding-bottom: 12px;
+    }
     #myBtn {
         display: none;
     }
