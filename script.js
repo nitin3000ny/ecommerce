@@ -26,7 +26,7 @@ closebutton.addEventListener('click', (e) => {
 
 })
 
-const proCard = document.querySelectorAll('.pro-card');
+const proCard = document.querySelectorAll('.pro-card-img');
 
 
 for (let i = 0; i < proCard.length; i++) {

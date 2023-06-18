@@ -322,7 +322,7 @@ a {
     flex-direction: column;
     gap: 6px;
     width: 260px;
-    height: 430px;
+    height: fit-content;
     align-items: flex-start;
     text-align: left;
     padding: 10px;
@@ -512,13 +512,16 @@ a {
     background-color: var(--cart-color);
 }
 
+.feature-section .feature-card-container .feature-pro-card:nth-child(1) a {
+    background-color: red;
+}
 .feature-section .feature-card-container .feature-pro-card:nth-child(2) a {
     background-color: rgb(181, 181, 10);
 }
 
 
 .feature-section .feature-card-container .feature-pro-card:nth-child(3) a {
-    background-color: rgb(159, 53, 17);
+    background-color: green;
 }
 
 .feature-section .feature-card-container .feature-pro-card:nth-child(4) a {
@@ -852,4 +855,71 @@ footer a {
 }
 .send-btn:hover{
 background-color: #b03131;
+}
+
+/* cart */
+.cart-img{
+    width: 130px;
+}
+ .container-cart{
+    padding-block: 20px;
+    justify-content: center;
+gap: 20px;}
+.cart-quantity{
+    width: 40px;
+}
+.total{
+    justify-content:center ;
+
+}
+.cart-section{
+    padding-block: 120px;
+}
+.cart-section h2{
+    text-align: center;
+    text-decoration: underline;
+    padding-bottom: 3px;
+}
+body,header{
+    position: relative;
+}
+.cart-section{
+    scrollbar-gutter:initial;
+    height: 100vh;
+    position: fixed;
+    top: -100%;
+    width: 100%;
+    opacity: 0;
+    display: none;
+    background-color:#fff;
+    
+    transition: all 0.25s ease-in-out;
+}
+.cart-section.cart-active{
+    scrollbar-width: 0px;
+    top: 0;
+    opacity: 1;
+    display: block;
+    overflow: scroll;
+}.cart-section.cart-active::-webkit-scrollbar {
+    width: 0; /* Set the width of the scrollbar to zero */
+    background: transparent; /* Make the background of the scrollbar transparent */
+  }
+  
+  /* Mozilla Firefox */
+  .cart-section.cart-active {
+    scrollbar-width: none; /* Hide the scrollbar in Firefox */
+  }
+.container-cart{
+    background-color: #e0e0e0;
+    border-radius: 6px;
+    margin-inline: 40px;
+    margin-bottom: 10px;
+}
+.buttons-in-cart{
+    display: block;
+    margin-left: 20px;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: space-between;
 }
