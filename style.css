@@ -164,7 +164,6 @@ a {
 .hover-links a.active2 {
     color: var(--accent-color-1);
 }
-
 .hover-links a {
     position: relative;
     transition: all 0.4s ease-out;
@@ -887,9 +886,10 @@ body,header{
     scrollbar-gutter:initial;
     height: 100vh;
     position: fixed;
-    top: -100%;
+    top: 0;
+    left: -100%;
     width: 100%;
-    display: none;
+    /* display: none; */
     background-color:#fff;
     
     transition: all 0.25s ease-in-out;
@@ -897,7 +897,8 @@ body,header{
 .cart-section.cart-active{
     scrollbar-width: 0px;
     top: 0;
-    display: block;
+    left: 0;
+    /* display: block; */
     overflow: scroll;
 }.cart-section.cart-active::-webkit-scrollbar {
     width: 0; /* Set the width of the scrollbar to zero */
@@ -920,4 +921,7 @@ body,header{
     flex-direction: column;
     gap: 20px;
     justify-content: space-between;
+}
+.cart-button-active.active2{
+    color: var(--accent-color-1)
 }

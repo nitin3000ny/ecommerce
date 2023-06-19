@@ -27,9 +27,8 @@
 
 
                     </ul>
-                </div>
-                <div class="cart hover-links2"><a href="#"> <i class="fa-solid fa-cart-shopping"></i>
-                    </a></div>
+                </div><div class="cart hover-links2"><a href="#" id="cart-button" class="cart-button-active"> <i class="fa-solid fa-cart-shopping "></i>
+                </a></div>
 
                 <div id="hamburger"><i class="fa-solid fa-ellipsis-vertical"></i></div>
         </nav>
@@ -119,12 +118,24 @@
 
         </div>
     </footer>
+    <section class="cart-section" id="cart">
+        <h2>Cart of Mids</h2>
+        <div class="cart-items-container">
+            
 
+        </div>
+        <div class="container total flex">
+            <h3 class="total">Total Amount to be paid: <span class="total-price">$0</span></h3> 
+            <div class="buttons-in-cart flex"> <a href="#" class="primary-btn" id="buy-btn">Buy Now</a></div>
+
+        </div>
+    </section>
 
 
     <script src="script.js">
     </script>
 
+<script src="cart.js" async> </script>
     <script src="https://kit.fontawesome.com/b44be53acd.js" crossorigin="anonymous"></script>
 
 </body>

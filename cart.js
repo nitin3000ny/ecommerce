@@ -42,7 +42,13 @@ function updateCartTotal() {
   const totalPrice = document.getElementsByClassName('total-price')[0];
 
   totalPrice.innerHTML = `$${updateCartTotal()}`;
-
+  cartButton=document.getElementById('cart-button');
+  cartButton.addEventListener('click',(e)=>{
+    e.preventDefault();
+    const cart=document.getElementById('cart-button');
+    cart.classList.toggle('active2');
+    
+  })
   const cartItemAdd = document.getElementsByClassName('add-to-cart');
   for (let i = 0; i < cartItemAdd.length; i++) {
     cartItemAdd[i].addEventListener('click', (e) => {
@@ -82,6 +88,7 @@ const title=document.getElementsByClassName('pr-name')[0].innerText;
     e.preventDefault();
     const cart=document.getElementById('cart');
     cart.classList.toggle('cart-active');
+    
   })
   
   const buyButton = document.getElementById('buy-btn');
