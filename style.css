@@ -889,7 +889,6 @@ body,header{
     position: fixed;
     top: -100%;
     width: 100%;
-    opacity: 0;
     display: none;
     background-color:#fff;
     
@@ -898,7 +897,6 @@ body,header{
 .cart-section.cart-active{
     scrollbar-width: 0px;
     top: 0;
-    opacity: 1;
     display: block;
     overflow: scroll;
 }.cart-section.cart-active::-webkit-scrollbar {

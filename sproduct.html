@@ -28,9 +28,8 @@
 
                     </ul>
                 </div>
-                <div class="cart hover-links2"><a href="#"> <i class="fa-solid fa-cart-shopping"></i>
-                    </a></div>
-
+                <div class="cart hover-links2"><a href="#" id="cart-button"> <i class="fa-solid fa-cart-shopping"></i>
+                </a></div>
                 <div id="hamburger"><i class="fa-solid fa-ellipsis-vertical"></i></div>
         </nav>
 
@@ -45,7 +44,7 @@
                     <div class="main-img">
                         <img id="main-pic"
                             src="https://media.istockphoto.com/id/1181871683/photo/set-of-accessories-fashion-clothes-seen-from-above-top-view.jpg?s=612x612&w=0&k=20&c=-VMdcS8tEVG3UoUz3SOBUunk7azy3FddL0QfduW5xZc="
-                            alt="">
+                            alt="" class="pro-card-img">
                     </div>
                     <div class="small-imgs-flex flex">
                         <div class="small-imgs"><img
@@ -81,8 +80,8 @@
                         </div>
                         <div class="buy-options">
                             <a href="#" class="primary-btn" id="buy-now">Buy Now</a>
-                            <a href="#" class="primary-btn" id="add-to-cart">Add to cart <i
-                                    class="fa-solid fa-cart-shopping"></i></a>
+                            <a href="#" class="primary-btn  add-to-cart-btn" id="add-to-cart ">Add to cart <i
+                                    class="fa-solid fa-cart-shopping add-to-cart"></i></a>
                         </div>
                     </div>
                 </div>
@@ -128,14 +127,23 @@
 
         </div>
     </footer>
+    <section class="cart-section" id="cart">
+        <h2>Cart of Mids</h2>
+        <div class="cart-items-container">
+            
+
+        </div>
+        <div class="container total flex">
+            <h3 class="total">Total Amount to be paid: <span class="total-price">$0</span></h3> 
+            <div class="buttons-in-cart flex"> <a href="#" class="primary-btn" id="buy-btn">Buy Now</a></div>
+
+        </div>
+    </section>
 
 
+    <script src="script.js"> </script>
 
-    <script src="script.js">
-        let main = document.querySelector('#main-pic');
-        console.log(main)</script>
-    </script>
-
+    <script src="cart.js" async> console.log('hello')</script>
     <script src="https://kit.fontawesome.com/b44be53acd.js" crossorigin="anonymous"></script>
 
 </body>
